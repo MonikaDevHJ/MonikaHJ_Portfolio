@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
-const About = () => {
-  const [activeSection, setActiveSection] = useState("Skills");
+// Define types for the section that can be active
+type Section = "Skills" | "Education";
+
+const About: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<Section>("Skills");
 
   return (
-    <div className="px-11 py-24 mt-1">
+    <div className="px-11 py-24 mt-1 animate-fade-in">
       <div className="flex flex-wrap lg:space-x-40">
         {/* First Column */}
         <div className="flex-1 p-5">
@@ -23,7 +26,7 @@ const About = () => {
         </div>
 
         {/* Second Column */}
-        <div className="flex-1 p-5">
+        <div className="flex-1 p-5 animate-slide-left">
           <div className="flex space-x-12 text-xl mb-4">
             {/* Clickable Skills Section */}
             <span
@@ -49,8 +52,8 @@ const About = () => {
           {/* Skills Section */}
           {activeSection === "Skills" && (
             <div>
-              <p className="font-bold text-white text-3xl  mt-8 mb-2">Skills</p>
-              <ul className="text-white list-disc  list-inside">
+              <p className="font-bold text-white text-3xl mt-8 mb-2">Skills</p>
+              <ul className="text-white list-disc list-inside">
                 <li>Languages: JavaScript, TypeScript, Java, Python</li>
                 <li>Frontend: React, Next.js, Tailwind CSS</li>
                 <li>Backend: Node.js, tRPC, PostgreSQL</li>
@@ -62,7 +65,7 @@ const About = () => {
           {/* Education Section */}
           {activeSection === "Education" && (
             <div>
-              <p className="font-bold text-white text-3xl mt-8  mb-2">Education</p>
+              <p className="font-bold text-white text-3xl mt-8 mb-2">Education</p>
               <ul className="text-white list-disc list-inside">
                 <li>BSC in Computer Science</li>
                 <li>Certified Java Full Stack Developer</li>
