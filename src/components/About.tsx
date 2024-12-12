@@ -8,7 +8,7 @@ const About: React.FC = () => {
 
   return (
     <div className="px-11 py-24 mt-1 animate-fade-in">
-      <div className="flex flex-wrap lg:space-x-40">
+      <div className="flex flex-wrap lg:space-x-40">  
         {/* First Column */}
         <div className="flex-1 p-5">
           <p className="font-bold text-white ml-1 text-4xl">About Me</p>
@@ -53,7 +53,7 @@ const About: React.FC = () => {
           {activeSection === "Skills" && (
             <div>
               <p className="font-bold text-white text-3xl mt-8 mb-2">Skills</p>
-              <ul className="text-white list-disc list-inside">
+              <ul className="text-white list-disc list-inside text-lg">
                 <li>Languages: JavaScript, TypeScript, Java, Python</li>
                 <li>Frontend: React, Next.js, Tailwind CSS</li>
                 <li>Backend: Node.js, tRPC, PostgreSQL</li>
@@ -66,7 +66,7 @@ const About: React.FC = () => {
           {activeSection === "Education" && (
             <div>
               <p className="font-bold text-white text-3xl mt-8 mb-2">Education</p>
-              <ul className="text-white list-disc list-inside">
+              <ul className="text-white list-disc list-inside text-lg">
                 <li>BSC in Computer Science</li>
                 <li>Certified Java Full Stack Developer</li>
               </ul>
