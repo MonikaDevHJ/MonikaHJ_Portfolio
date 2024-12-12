@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="flex flex-wrap lg:space-x-40">  
         {/* First Column */}
         <div className="flex-1 p-5">
-          <p className="font-bold text-white ml-1 text-4xl">About Me</p>
+          <p className="font-bold text-fuchsia-400   ml-1 text-4xl">About Me</p>
           <p className="text-white font-semibold text-xl mt-8">
             I have 1+ year of experience in software development, specializing
             in creating responsive applications. With a background in Computer
@@ -31,7 +31,7 @@ const About: React.FC = () => {
             {/* Clickable Skills Section */}
             <span
               className={`font-bold text-3xl cursor-pointer ${
-                activeSection === "Skills" ? "text-blue-500" : "text-white"
+                activeSection === "Skills" ? "text-fuchsia-400" : "text-white"
               }`}
               onClick={() => setActiveSection("Skills")}
             >
@@ -41,7 +41,7 @@ const About: React.FC = () => {
             {/* Clickable Education Section */}
             <span
               className={`font-bold text-3xl cursor-pointer ${
-                activeSection === "Education" ? "text-blue-500" : "text-white"
+                activeSection === "Education" ? "text-fuchsia-400" : "text-white"
               }`}
               onClick={() => setActiveSection("Education")}
             >
