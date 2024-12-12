@@ -1,14 +1,22 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import JoboxHire from "../assets/JoboxHire.png";
 import Shoipping from "../assets/Shoipping.png";
 import Sigma_Hospital from "../assets/Sigma_Hospital.png";
 import Weather from "../assets/Weather.png";
-import Github from "../assets/Github.png"; // Add your GitHub icon path here
-import Link from "../assets/Link.png"; // Add your Website icon path here
+import Github from "../assets/Github.png";  
+import Link from "../assets/Link.png"; 
 
-const Project = () => {
-  const projects = [
+type Project = {
+  image: StaticImageData;
+  alt: string;
+  name: string;
+  githubLink: string;
+  websiteLink: string;
+};
+
+const Project: React.FC = () => {
+  const projects: Project[] = [
     {
       image: JoboxHire,
       alt: "Jobox Hire",
@@ -40,12 +48,11 @@ const Project = () => {
   ];
 
   return (
-    <div className="px-8 py-6 mt-1 animate-fade-in border border-gray-700 bg-gray-800">
+    <div className="px-8 py-6 mt-1 animate-fade-in bg-gray-800">
       <div>
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl">My Projects</p>
       </div>
 
-      {/* Image Section */}
       <div className="flex flex-wrap gap-4 mt-10">
         {projects.map((project, index) => (
           <div key={index} className="p-5 group relative">
@@ -59,10 +66,8 @@ const Project = () => {
               />
             </div>
 
-            {/* Hover Action */}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="flex gap-4">
-                {/* GitHub Icon */}
                 <a
                   href={project.githubLink}
                   target="_blank"
@@ -76,8 +81,6 @@ const Project = () => {
                     height={40}
                   />
                 </a>
-
-                {/* Website Icon */}
                 <a
                   href={project.websiteLink}
                   target="_blank"
