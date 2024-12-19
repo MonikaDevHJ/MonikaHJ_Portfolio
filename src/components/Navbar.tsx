@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  
   return (
     <nav className="bg-gray-800 text-white px-11 py-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
