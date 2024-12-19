@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>("Skills");
 
   return (
-    <div className="px-11 py-16 mt-1 animate-fade-in">
+    <div id="about" className="px-11 py-16 mt-1 animate-fade-in">
       <div className="flex flex-wrap lg:space-x-40">  
         {/* First Column */}
         <div className="flex-1 p-5">
