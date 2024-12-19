@@ -15,7 +15,7 @@ export default {
         'slide-right': 'slideRight 1s ease-out',
         'zoom-in': 'zoomIn 0.8s ease-out',
         'bounce-in': 'bounceIn 0.6s ease-out',
-        'typing': 'typing 4s steps(20, end) infinite, blink 1.5s step-end infinite', // Adjusted steps
+        'typing': 'typing 4s steps(20, end) infinite, blink 1.5s step-end infinite',
       },
       keyframes: {
         fadeIn: {

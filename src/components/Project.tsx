@@ -48,7 +48,7 @@ const Project: React.FC = () => {
   ];
 
   return (
-    <div className="px-8 py-6 mt-1 animate-fade-in bg-gray-800">
+    <div  id="projects" className="px-8 py-6 mt-1 animate-fade-in bg-gray-800">
       <div>
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl">My Projects</p>
       </div>
