@@ -54,9 +54,11 @@ const About: React.FC = () => {
             <div>
               <p className="font-bold text-white text-3xl mt-8 mb-2">Skills</p>
               <ul className="text-white list-disc list-inside text-lg">
-                <li>Languages: JavaScript, TypeScript, Java, Python</li>
+                <li>Languages: JavaScript, TypeScript, Java</li>
                 <li>Frontend: React, Next.js, Tailwind CSS</li>
-                <li>Backend: Node.js, tRPC, PostgreSQL</li>
+                <li>Backend: Node.js, tRPC, </li>
+                <li>Database: SQL,  PostgreSQL</li>
+
                 <li>Tools: Prisma, GitHub</li>
               </ul>
             </div>
@@ -67,7 +69,7 @@ const About: React.FC = () => {
             <div>
               <p className="font-bold text-white text-3xl mt-8 mb-2">Education</p>
               <ul className="text-white list-disc list-inside text-lg">
-                <li>BSC in Computer Science</li>
+                <li>Bachelor’s of   Computer Science</li>
                 <li>Certified Java Full Stack Developer</li>
               </ul>
             </div>

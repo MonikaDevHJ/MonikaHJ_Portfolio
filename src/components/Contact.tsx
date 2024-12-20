@@ -9,12 +9,12 @@ import Github from "../assets/Github.png";
 
 const Contact: React.FC = () => {
   return (
-    <div id="contact" className="px-8 py-6 mt-4 animate-fade-in bg-gray-800">
+    <div id="contact" className="px-8 py-6 mt-12  animate-fade-in bg-gray-800 ">
       <div>
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl">Let's Connect</p>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-5 ml-5 space-y-8 md:space-y-0 md:space-x-16 p-6  rounded-lg">
+      <div className="flex flex-col md:flex-row justify-center items-center mt-10 ml-5 space-y-8 md:space-y-0 md:space-x-16 p-6  rounded-lg ">
         {/* First Column */}
         <div className="flex flex-col space-y-8 md:w-1/3">  
           <div className="flex items-center">
