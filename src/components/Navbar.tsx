@@ -9,6 +9,8 @@ const Navbar = () => {
   };
   
   return (
+    /* eslint-disable react/no-unescaped-entities */
+
     <nav className="bg-gray-800 text-white px-11 fixed top-0 left-0 w-full z-50  py-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}

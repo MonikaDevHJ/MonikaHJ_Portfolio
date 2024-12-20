@@ -8,7 +8,7 @@ const Home = () => {
     <section id="home" className="flex flex-col md:flex-row items-center justify-between gap-1 md:gap-52 lg:gap-96 px-4 md:px-5 lg:px-20 py-14 bg-gray-800 text-white animate-fade-in">
       {/* Left Side (Text Content) */}
       <div className="w-full md:w-1/2 text-2xl animate-slide-left">
-        <p className="text-5xl md:text-6xl lg:text-8xl font-semibold mb-4 text-fuchsia-400">Hi, I'm</p>
+        <p className="text-5xl md:text-6xl lg:text-8xl font-semibold mb-4 text-fuchsia-400">Hi, I&#39;m</p>
         <p className="text-3xl md:text-5xl lg:text-5xl font-semibold mb-4 text-white mt-8 whitespace-nowrap overflow-hidden border-r-4 border-white animate-typing w-full">
           Full Stack Developer
         </p>

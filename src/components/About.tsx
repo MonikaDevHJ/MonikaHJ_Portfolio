@@ -7,6 +7,8 @@ const About: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>("Skills");
 
   return (
+    /* eslint-disable react/no-unescaped-entities */
+
     <div id="about" className="px-11 py-16 mt-1 animate-fade-in">
       <div className="flex flex-wrap lg:space-x-40">  
         {/* First Column */}
