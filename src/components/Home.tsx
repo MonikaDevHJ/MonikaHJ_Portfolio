@@ -40,8 +40,8 @@ const Home = () => {
           src={Monika}
           alt="Monika"
           className="rounded-full shadow-lg"
-          width={300}
-          height={300}
+          width={350}
+          height={350}
         />
       </div>
     </section>

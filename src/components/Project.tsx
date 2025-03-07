@@ -6,6 +6,7 @@ import Sigma_Hospital from "../assets/Sigma_Hospital.png";
 import Weather from "../assets/Weather.png";
 import Github from "../assets/Github.png";  
 import Link from "../assets/Link.png"; 
+import Recruitearn from "../assets/Recruitearn.png"
 
 type Project = {
   image: StaticImageData;
@@ -44,6 +45,13 @@ const Project: React.FC = () => {
       name: "Weather Forecast",
       githubLink: "https://github.com/MonikaDevHJ/Weather_App",
       websiteLink: "https://weatherforecast.com",
+    },
+    {
+      image: Recruitearn,
+      alt: "Recruit And Earn",
+      name: "Weather Forecast",
+      githubLink: "https://github.com/JoboxOrg/JoboxHire",
+      websiteLink: "https://www.joboxhire.co/",
     },
   ];
 
