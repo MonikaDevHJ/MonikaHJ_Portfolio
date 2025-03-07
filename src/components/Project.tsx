@@ -49,7 +49,7 @@ const Project: React.FC = () => {
     {
       image: Recruitearn,
       alt: "Recruit And Earn",
-      name: "Weather Forecast",
+      name: "Recruit And Earn",
       githubLink: "https://github.com/JoboxOrg/JoboxHire",
       websiteLink: "https://www.joboxhire.co/",
     },
