@@ -60,7 +60,7 @@ const Project: React.FC = () => {
 
     <div  id="projects" className="px-8 py-6 mt-1 animate-fade-in bg-gray-800">
       <div>
-        <p className="font-bold text-fuchsia-400 ml-5 text-4xl">My Projects</p>
+        <p className="font-bold text-fuchsia-400 ml-5 text-4xl"> Projects</p>
       </div>
 
       <div className="flex flex-wrap gap-4 mt-10">
