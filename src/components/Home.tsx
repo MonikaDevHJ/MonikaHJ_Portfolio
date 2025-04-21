@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <section id="home" className="flex flex-col md:flex-row items-center justify-between gap-1 md:gap-52 lg:gap-96 px-4 md:px-5 lg:px-20 py-14 bg-gray-800 text-white animate-fade-in">
+    <section data-aos="fade-up" id="home" className="flex flex-col md:flex-row items-center justify-between gap-1 md:gap-52 lg:gap-96 px-4 md:px-5 lg:px-20 py-14 bg-gray-800 text-white animate-fade-in">
       {/* Left Side (Text Content) */}
       <div className="w-full md:w-1/2 text-2xl animate-slide-left">
         <p className="text-5xl md:text-6xl lg:text-8xl font-semibold mb-4 text-fuchsia-400">Hi, I&#39;m</p>

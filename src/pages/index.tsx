@@ -28,7 +28,7 @@ const Index = () => {
       <Navbar />
 
       {/* Each section with a unique ID for navigation */}
-      <div className="pt-28">
+      <div  className="pt-28">
       <section id="home">
         <Home />
       </section>

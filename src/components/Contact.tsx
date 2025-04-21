@@ -10,7 +10,7 @@ import Github from "../assets/Github.png";
 const Contact: React.FC = () => {
   return (
     /* eslint-disable-next-line react/no-unescaped-entities */
-    <div id="contact" className="px-8 py-6 mt-12  animate-fade-in bg-gray-800 ">
+    <div data-aos="fade-up"   id="contact" className="px-8 py-6 mt-12  animate-fade-in bg-gray-800 ">
       <div>
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl">Let&#39;s Connect</p>
       </div>
