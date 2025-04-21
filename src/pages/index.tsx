@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
+import Skills from "@/components/skills";
 
 const Index = () => {
   useEffect(() => {
@@ -34,6 +35,13 @@ const Index = () => {
       <section id="about">
         <About />
       </section>
+ 
+      <section id="about">
+        <Skills />
+      </section>
+      
+
+
       <section id="projects">
         <Project />
       </section>
