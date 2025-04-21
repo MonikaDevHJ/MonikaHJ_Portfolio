@@ -1,4 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// import { VscVisualStudio } from "react-icons/vsc"; // ✅ Correct VS Code icon
+import { FaDatabase } from "react-icons/fa"; // fallback for Neon.tech
+
 import {
   SiJavascript,
   SiTypescript,
@@ -9,11 +14,24 @@ import {
   SiMui,
   SiTailwindcss,
   SiPostgresql,
-  SiPrisma
+  SiPrisma,
+  SiAmazon,
+  SiVercel,
+  SiGithub,
+  SiMysql, // for SQL
 } from "react-icons/si";
+
 
 const Skills = () => {
   const [filter, setFilter] = useState("All");
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [filter]);
 
   const icons = [
     {
@@ -26,7 +44,11 @@ const Skills = () => {
       name: "TypeScript",
       category: ["Frontend", "Backend"]
     },
-    { icon: <SiReact color="#61dafb" />, name: "React", category: "Frontend" },
+    {
+      icon: <SiReact color="#61dafb" />,
+      name: "React",
+      category: "Frontend"
+    },
     {
       icon: <SiNextdotjs color="#000000" />,
       name: "Next.js",
@@ -47,33 +69,69 @@ const Skills = () => {
       name: "Bootstrap",
       category: "Frontend"
     },
-
     {
       icon: <SiNodedotjs color="#3c873a" />,
       name: "Node.js",
       category: "Backend"
     },
-    { icon: <SiPrisma color="#2d3748" />, name: "Prisma", category: "Backend" },
-
+    {
+      icon: <SiPrisma color="#2d3748" />,
+      name: "Prisma",
+      category: "Backend"
+    },
     {
       icon: <SiPostgresql color="#336791" />,
       name: "PostgreSQL",
       category: "Database"
+    },
+    {
+      icon: <SiMysql color="#00758F" />,
+      name: "SQL",
+      category: "Database"
+    },
+    {
+      icon: <SiGithub color="#000" />,
+      name: "GitHub",
+      category: "Tools"
+    },
+    // {
+    //   icon: < VscVisualStudio color="#007ACC" />,
+    //   name: "VS Code",
+    //   category: "Tools"
+    // },
+    {
+      icon: <SiVercel color="#000" />,
+      name: "Vercel",
+      category: "Tools"
+    },
+    {
+      icon: <FaDatabase color="#00c897" />,
+      name: "Neon.tech",
+      category: "Tools"
+    },
+    {
+      icon: <SiAmazon color="#FF9900" />,
+      name: "AWS",
+      category: "Tools"
     }
   ];
 
   const filteredIcons =
     filter === "All"
       ? icons
-      : icons.filter((tech) => tech.category.includes(filter));
+      : icons.filter((tech) =>
+          Array.isArray(tech.category)
+            ? tech.category.includes(filter)
+            : tech.category === filter
+        );
 
   return (
-    <div data-aos="fade-up" className="px-12 py-16 animate-fade-in">
+    <div data-aos="fade-up" id="skills"  className="px-12 py-16 animate-fade-in">
       <h2 className="text-4xl font-bold text-fuchsia-400 mb-8">Skills</h2>
 
       {/* Filter Buttons */}
       <div className="flex flex-wrap gap-4 mb-10">
-        {["All", "Frontend", "Backend", "Database"].map((cat) => (
+        {["All", "Frontend", "Backend", "Database", "Tools"].map((cat) => (
           <button
             key={cat}
             onClick={() => setFilter(cat)}
@@ -89,11 +147,16 @@ const Skills = () => {
       </div>
 
       {/* Skill Icons */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8">
+      <div
+        key={filter}
+        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8"
+      >
         {filteredIcons.map((tech, index) => (
           <div
             key={index}
             className="flex flex-col items-center hover:scale-110 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay={`${index * 100}`}
           >
             <div className="text-5xl">{tech.icon}</div>
             <p className="mt-2 text-lg font-medium text-white">{tech.name}</p>

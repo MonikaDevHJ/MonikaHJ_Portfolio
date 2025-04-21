@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-// Define types for the section that can be active
-type Section = "Skills" | "Education";
 
 const About: React.FC = () => {
-  // const [activeSection, setActiveSection] = useState<Section>("Skills");
 
   return (
     /* eslint-disable react/no-unescaped-entities */
@@ -14,7 +11,7 @@ const About: React.FC = () => {
         {/* First Column */}
         <div className="flex-1 p-5">
           <p className="font-bold text-fuchsia-400   ml-1 text-4xl">About Me</p>  
-          <p className="text-white font-semibold text-xl mt-8">
+          <p className="text-white font-semibold text-2xl mt-8">
             I have 1.5+ year of experience in software development, specializing
             in creating responsive applications. With a background in Computer
             Science and a certification in Java Full Stack Development, I’m

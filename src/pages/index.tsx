@@ -4,7 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
-import Skills from "@/components/skills";
+import Skills from "../components/skills";
 
 const Index = () => {
   useEffect(() => {
@@ -36,7 +36,7 @@ const Index = () => {
         <About />
       </section>
  
-      <section id="about">
+      <section id="skills">
         <Skills />
       </section>
       
