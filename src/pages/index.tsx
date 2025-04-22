@@ -5,6 +5,7 @@ import About from "../components/About";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Skills from "../components/skills";
+import Experience from "../components/Experience";
 
 const Index = () => {
   useEffect(() => {
@@ -38,6 +39,10 @@ const Index = () => {
  
       <section id="skills">
         <Skills />
+      </section>
+
+      <section id="Experience">
+        <Experience />
       </section>
       
 

@@ -7,21 +7,21 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   return (
     /* eslint-disable react/no-unescaped-entities */
 
     <nav className="bg-gray-800 text-white px-11 fixed top-0 left-0 w-full z-50  py-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-3xl font-semibold ml-[-33px]">Monika H J</div> 
+        <div className="text-3xl font-semibold ml-[-33px]">Monika H J</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
           <a href="#home" className="hover:text-gray-400">Home</a>
           <a href="#about" className="hover:text-gray-400">About</a>
-          <a href="#Skills" className="hover:text-gray-400">Skills</a>
-          <a href="#about" className="hover:text-gray-400">Experience</a>
+          <a href="#skills" className="hover:text-gray-400">Skills</a>
+          <a href="#Experience" className="hover:text-gray-400">Experience</a>
 
 
           <a href="#projects" className="hover:text-gray-400">Projects</a>
@@ -47,6 +47,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};  
+};
 
 export default Navbar;
