@@ -63,10 +63,10 @@ const Project: React.FC = () => {
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl"> Projects</p>
       </div>
 
-      <div className="flex flex-wrap gap-4 mt-10">
+      <div className="flex flex-wrap gap-4 mt-10" data-aos="fade-up">
         {projects.map((project, index) => (
           <div key={index} className="p-5 group relative">
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg " data-aos="fade-up">
               <Image
                 src={project.image}
                 alt={project.alt}
