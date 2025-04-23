@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Navbar is always visible */}
       <Navbar />
       {/* Content for the current page */}
-      <main>{children}</main>
+      <main className="pt-24">{children}</main>
     </div>
   );
 };
