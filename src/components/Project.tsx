@@ -4,9 +4,9 @@ import JoboxHire from "../assets/JoboxHire.png";
 import Shoipping from "../assets/Shoipping.png";
 import Sigma_Hospital from "../assets/Sigma_Hospital.png";
 import Weather from "../assets/Weather.png";
-import Github from "../assets/Github.png";  
-import Link from "../assets/Link.png"; 
-import Recruitearn from "../assets/Recruitearn.png"
+import Github from "../assets/Github.png";
+import Link from "../assets/Link.png";
+import Recruitearn from "../assets/Recruitearn.png";
 
 type Project = {
   image: StaticImageData;
@@ -23,42 +23,46 @@ const Project: React.FC = () => {
       alt: "Jobox Hire",
       name: "Jobox Hire Pvt Ltd",
       githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://joboxhire.com/",
+      websiteLink: "https://joboxhire.com/"
     },
     {
       image: Shoipping,
       alt: "Shopping Cart",
       name: "Shopping Cart",
       githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
-      websiteLink: "https://shoppingcart.com",
+      websiteLink: "https://shoppingcart.com"
     },
     {
       image: Sigma_Hospital,
       alt: "Sigma Hospital",
       name: "Sigma Hospital",
       githubLink: "https://github.com/example-sigmahospital",
-      websiteLink: "https://www.infinitrotech.com/",
+      websiteLink: "https://www.infinitrotech.com/"
     },
     {
       image: Weather,
       alt: "Weather App",
       name: "Weather Forecast",
       githubLink: "https://github.com/MonikaDevHJ/Weather_App",
-      websiteLink: "https://weatherforecast.com",
+      websiteLink: "https://weatherforecast.com"
     },
     {
       image: Recruitearn,
       alt: "Recruit And Earn",
       name: "Recruit And Earn",
       githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://www.joboxhire.co/",
-    },
+      websiteLink: "https://www.joboxhire.co/"
+    }
   ];
 
   return (
     /* eslint-disable react/no-unescaped-entities */
 
-    <div  data-aos="fade-up" id="projects" className="px-8 py-6 mt-1 animate-fade-in bg-gray-800">
+    <div
+      data-aos="fade-up"
+      id="projects"
+      className="px-8 py-6 mt-1 animate-fade-in bg-gray-800"
+    >
       <div>
         <p className="font-bold text-fuchsia-400 ml-5 text-4xl"> Projects</p>
       </div>
@@ -84,12 +88,7 @@ const Project: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
                 >
-                  <Image
-                    src={Github}
-                    alt="GitHub"
-                    width={40}
-                    height={40}
-                  />
+                  <Image src={Github} alt="GitHub" width={40} height={40} />
                 </a>
                 <a
                   href={project.websiteLink}
@@ -97,17 +96,20 @@ const Project: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-white p-2 rounded-full shadow-lg hover:bg-gray-200"
                 >
-                  <Image
-                    src={Link}
-                    alt="Website"
-                    width={40}
-                    height={40}
-                  />
+                  <Image src={Link} alt="Website" width={40} height={40} />
                 </a>
               </div>
             </div>
 
-            <p className="text-white mt-2 text-2xl">{project.name}</p>
+            <div className="flex justify-between items-center relative z-10 mt-2">
+              <p className="text-white text-lg sm:text-xl">{project.name}</p>
+
+              <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
+                View Details
+              </button>
+            </div>
+
+
           </div>
         ))}
       </div>
