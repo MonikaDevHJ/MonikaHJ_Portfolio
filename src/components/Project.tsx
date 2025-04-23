@@ -7,6 +7,7 @@ import Weather from "../assets/Weather.png";
 import Github from "../assets/Github.png";
 import Link from "../assets/Link.png";
 import Recruitearn from "../assets/Recruitearn.png";
+import NextLink from "next/link"
 
 type Project = {
   image: StaticImageData;
@@ -104,9 +105,12 @@ const Project: React.FC = () => {
             <div className="flex justify-between items-center relative z-10 mt-2">
               <p className="text-white text-lg sm:text-xl">{project.name}</p>
 
+
+             <NextLink href="/Projects/ProjectsDetails">
               <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
                 View Details
               </button>
+              </NextLink>
             </div>
 
 
