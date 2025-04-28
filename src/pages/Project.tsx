@@ -8,7 +8,6 @@ import Github from "../assets/Github.png";
 import Link from "../assets/Link.png";
 import Recruitearn from "../assets/Recruitearn.png";
 import NextLink from "next/link"
-import ProjectsDetails from "../pages/Projects/ProjectsDetails"
 
 type Project = {
   image: StaticImageData;
