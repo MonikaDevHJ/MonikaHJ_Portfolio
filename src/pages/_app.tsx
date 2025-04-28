@@ -14,8 +14,12 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <Layout>
+
+    <div className="bg-gray-800 min-h-screen">
+       <Layout>
       <Component {...pageProps} />
     </Layout>
+    </div>
+   
   );
 }

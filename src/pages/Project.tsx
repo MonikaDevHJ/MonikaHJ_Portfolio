@@ -21,6 +21,13 @@ type Project = {
 const Project: React.FC = () => {
   const projects: Project[] = [
     {
+      image: Recruitearn,
+      alt: "Recruit And Earn",
+      name: "Recruit And Earn",
+      githubLink: "https://github.com/JoboxOrg/JoboxHire",
+      websiteLink: "https://www.joboxhire.co/"
+    },
+    {
       image: JoboxHire,
       alt: "Jobox Hire",
       name: "Jobox Hire Pvt Ltd",
@@ -48,13 +55,7 @@ const Project: React.FC = () => {
       githubLink: "https://github.com/MonikaDevHJ/Weather_App",
       websiteLink: "https://weatherforecast.com"
     },
-    {
-      image: Recruitearn,
-      alt: "Recruit And Earn",
-      name: "Recruit And Earn",
-      githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://www.joboxhire.co/"
-    }
+  
   ];
 
   return (

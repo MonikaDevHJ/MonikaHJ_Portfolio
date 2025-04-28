@@ -12,7 +12,10 @@ const Navbar = () => {
     <nav className="bg-gray-800 text-white px-11 fixed top-0 left-0 w-full z-50 py-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-3xl font-semibold ml-[-33px]">Monika H J</div>
+
+        <Link href="/" className="text-3xl font-semibold ml-[-33px] ">
+          Monika H J
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
@@ -33,7 +36,7 @@ const Navbar = () => {
           </Link>
           <Link href="/Contact" className="hover:text-gray-400">
             Contact
-          </Link> 
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}

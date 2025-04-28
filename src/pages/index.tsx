@@ -24,12 +24,12 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-800 ">
       {/* Navbar is visible at all times */}
       <Navbar />
 
       {/* Each section with a unique ID for navigation */}
-      <div className="pt-28">
+      <div className="pt-28 bg-gray-800">
         <section id="home">
           <Home />
         </section>
