@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Link from "next/link";  // Import Link from next/link
 
 const Navbar = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -9,23 +9,31 @@ const Navbar = () => {
   };
 
   return (
-    /* eslint-disable react/no-unescaped-entities */
-
-    <nav className="bg-gray-800 text-white px-11 fixed top-0 left-0 w-full z-50  py-10">
+    <nav className="bg-gray-800 text-white px-11 fixed top-0 left-0 w-full z-50 py-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-3xl font-semibold ml-[-33px]">Monika H J</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-gray-400">Home</a>
-          <a href="#about" className="hover:text-gray-400">About</a>
-          <a href="#skills" className="hover:text-gray-400">Skills</a>
-          <a href="#Experience" className="hover:text-gray-400">Experience</a>
-
-
-          <a href="#projects" className="hover:text-gray-400">Projects</a>
-          <a href="#contact" className="hover:text-gray-400">Contact</a>
+          <Link href="/" className="hover:text-gray-400">
+            Home
+          </Link>
+          <Link href="/About" className="hover:text-gray-400">
+            About
+          </Link>
+          <Link href="/skills" className="hover:text-gray-400">
+            Skills
+          </Link>
+          <Link href="/Experience" className="hover:text-gray-400">
+            Experience
+          </Link>
+          <Link href="/Project" className="hover:text-gray-400">
+            Projects
+          </Link>
+          <Link href="/Contact" className="hover:text-gray-400">
+            Contact
+          </Link> 
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -35,14 +43,26 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <div className="flex flex-col items-center space-y-4 py-4 bg-gray-700">
-          <a href="#home" className="hover:text-gray-400">Home</a>
-          <a href="#about" className="hover:text-gray-400">About</a>
-          <a href="#Skills" className="hover:text-gray-400">Skills</a>
-          <a href="#about" className="hover:text-gray-400">Experience</a>
-          <a href="#projects" className="hover:text-gray-400">Projects</a>
-          <a href="#contact" className="hover:text-gray-400">Contact</a>
+          <Link href="/" className="hover:text-gray-400">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-gray-400">
+            About
+          </Link>
+          <Link href="/skills" className="hover:text-gray-400">
+            Skills
+          </Link>
+          <Link href="/experience" className="hover:text-gray-400">
+            Experience
+          </Link>
+          <Link href="/projects" className="hover:text-gray-400">
+            Projects
+          </Link>
+          <Link href="/contact" className="hover:text-gray-400">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
