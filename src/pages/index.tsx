@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import Home from "../components/Home";
-import About from "../components/About";
-import Project from "../components/Project";
-import Contact from "../components/Contact";
-import Skills from "../components/skills";
-import Experience from "../components/Experience";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Project from "../pages/Project";
+import Contact from "../pages/Contact";
+import Experience from "../pages/Experience";
+import Skills from "../pages/skills"
 
 const Index = () => {
   useEffect(() => {
@@ -29,31 +29,31 @@ const Index = () => {
       <Navbar />
 
       {/* Each section with a unique ID for navigation */}
-      <div  className="pt-28">
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <About />
-      </section>
- 
-      <section id="skills">
-        <Skills />
-      </section>
+      <div className="pt-28">
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
 
-      <section id="Experience">
-        <Experience />
-      </section>
-      
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="Experience">
+          <Experience />
+        </section>
 
 
-      <section id="projects">
-        <Project />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-    </div>
+
+        <section id="projects">
+          <Project />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </div>
     </div>
   );
 };
