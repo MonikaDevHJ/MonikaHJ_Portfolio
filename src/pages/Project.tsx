@@ -55,7 +55,7 @@ const Project: React.FC = () => {
       githubLink: "https://github.com/MonikaDevHJ/Weather_App",
       websiteLink: "https://weatherforecast.com"
     },
-  
+
   ];
 
   return (
@@ -108,10 +108,10 @@ const Project: React.FC = () => {
               <p className="text-white text-lg sm:text-xl">{project.name}</p>
 
 
-             <NextLink href="/Projects/ProjectsDetails">
-              <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
-                View Details
-              </button>
+              <NextLink href="/Projects/ProjectsDetails">
+                <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
+                  View Details
+                </button>
               </NextLink>
             </div>
 
