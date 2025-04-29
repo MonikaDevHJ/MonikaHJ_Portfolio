@@ -1,81 +1,25 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
-import JoboxHire from "../assets/JoboxHire.png";
-import Shoipping from "../assets/Shoipping.png";
-import Sigma_Hospital from "../assets/Sigma_Hospital.png";
-import Weather from "../assets/Weather.png";
+import Image from "next/image";
+import { projects, Project as ProjectType } from "../../public/Data/ProjectData";
 import Github from "../assets/Github.png";
 import Link from "../assets/Link.png";
-import Recruitearn from "../assets/Recruitearn.png";
-import NextLink from "next/link"
-
-type Project = {
-  image: StaticImageData;
-  alt: string;
-  name: string;
-  githubLink: string;
-  websiteLink: string;
-};
+import NextLink from "next/link";
 
 const Project: React.FC = () => {
-  const projects: Project[] = [
-    {
-      image: Recruitearn,
-      alt: "Recruit And Earn",
-      name: "Recruit And Earn",
-      githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://www.joboxhire.co/",
-
-    },
-    {
-      image: JoboxHire,
-      alt: "Jobox Hire",
-      name: "Jobox Hire Pvt Ltd",
-      githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://joboxhire.com/"
-    },
-    {
-      image: Shoipping,
-      alt: "Shopping Cart",
-      name: "Shopping Cart",
-      githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
-      websiteLink: "https://shoppingcart.com"
-    },
-    {
-      image: Sigma_Hospital,
-      alt: "Sigma Hospital",
-      name: "Sigma Hospital",
-      githubLink: "https://github.com/example-sigmahospital",
-      websiteLink: "https://www.infinitrotech.com/"
-    },
-    {
-      image: Weather,
-      alt: "Weather App",
-      name: "Weather Forecast",
-      githubLink: "https://github.com/MonikaDevHJ/Weather_App",
-      websiteLink: "https://weatherforecast.com",
-
-
-    },
-
-  ];
-
   return (
-    /* eslint-disable react/no-unescaped-entities */
-
     <div
       data-aos="fade-up"
       id="projects"
       className="px-8 py-6 mt-1 animate-fade-in bg-gray-800"
     >
       <div>
-        <p className="font-bold text-fuchsia-400 ml-5 text-4xl"> Projects</p>
+        <p className="font-bold text-fuchsia-400 ml-5 text-4xl">Projects</p>
       </div>
 
       <div className="flex flex-wrap gap-4 mt-10" data-aos="fade-up">
         {projects.map((project, index) => (
           <div key={index} className="p-5 group relative">
-            <div className="overflow-hidden rounded-lg " data-aos="fade-up">
+            <div className="overflow-hidden rounded-lg" data-aos="fade-up">
               <Image
                 src={project.image}
                 alt={project.alt}
@@ -109,15 +53,12 @@ const Project: React.FC = () => {
             <div className="flex justify-between items-center relative z-10 mt-2">
               <p className="text-white text-lg sm:text-xl">{project.name}</p>
 
-
               <NextLink href="/Projects/ProjectsDetails">
                 <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
                   View Details
                 </button>
               </NextLink>
             </div>
-
-
           </div>
         ))}
       </div>
