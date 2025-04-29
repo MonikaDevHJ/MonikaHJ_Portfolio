@@ -24,7 +24,8 @@ const Project: React.FC = () => {
       alt: "Recruit And Earn",
       name: "Recruit And Earn",
       githubLink: "https://github.com/JoboxOrg/JoboxHire",
-      websiteLink: "https://www.joboxhire.co/"
+      websiteLink: "https://www.joboxhire.co/",
+
     },
     {
       image: JoboxHire,
@@ -52,7 +53,9 @@ const Project: React.FC = () => {
       alt: "Weather App",
       name: "Weather Forecast",
       githubLink: "https://github.com/MonikaDevHJ/Weather_App",
-      websiteLink: "https://weatherforecast.com"
+      websiteLink: "https://weatherforecast.com",
+
+
     },
 
   ];

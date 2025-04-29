@@ -51,19 +51,19 @@ const Navbar = () => {
           <Link href="/" className="hover:text-gray-400">
             Home
           </Link>
-          <Link href="/about" className="hover:text-gray-400">
+          <Link href="/About" className="hover:text-gray-400">
             About
           </Link>
           <Link href="/skills" className="hover:text-gray-400">
             Skills
           </Link>
-          <Link href="/experience" className="hover:text-gray-400">
+          <Link href="/Experience" className="hover:text-gray-400">
             Experience
           </Link>
-          <Link href="/projects" className="hover:text-gray-400">
+          <Link href="/Project" className="hover:text-gray-400">
             Projects
           </Link>
-          <Link href="/contact" className="hover:text-gray-400">
+          <Link href="/Contact" className="hover:text-gray-400">
             Contact
           </Link>
         </div>
