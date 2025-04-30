@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import { projects, Project } from "../../../public/Data/ProjectData";
-import Github from "../../src/assets/Github.png";
-import Link from "../../src/assets/Link.png";
+import Github from "../../assets/Github.png";
+import Link from "../../assets/Link.png";
 import { useRouter } from "next/router";
 
 type Props = {
