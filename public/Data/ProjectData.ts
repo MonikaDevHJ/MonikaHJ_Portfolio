@@ -14,6 +14,7 @@ export type Project = {
   name: string;
   githubLink: string;
   websiteLink: string;
+  routeName: string;
 };
 
 export const projects: Project[] = [
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     name: "Recruit And Earn",
     githubLink: "https://github.com/JoboxOrg/JoboxHire",
     websiteLink: "https://www.joboxhire.co/",
+    routeName: "recruit-and-earn",
   },
   {
     image: JoboxHire,
@@ -30,6 +32,7 @@ export const projects: Project[] = [
     name: "Jobox Hire Pvt Ltd",
     githubLink: "https://github.com/JoboxOrg/JoboxHire",
     websiteLink: "https://joboxhire.com/",
+    routeName: "jobox-hire",
   },
   {
     image: Shoipping,
@@ -37,6 +40,7 @@ export const projects: Project[] = [
     name: "Shopping Cart",
     githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
     websiteLink: "https://shoppingcart.com",
+    routeName: "shopping-cart",
   },
   {
     image: Sigma_Hospital,
@@ -44,6 +48,7 @@ export const projects: Project[] = [
     name: "Sigma Hospital",
     githubLink: "https://github.com/example-sigmahospital",
     websiteLink: "https://www.infinitrotech.com/",
+    routeName: "sigma-hospital",
   },
   {
     image: Weather,
@@ -51,5 +56,6 @@ export const projects: Project[] = [
     name: "Weather Forecast",
     githubLink: "https://github.com/MonikaDevHJ/Weather_App",
     websiteLink: "https://weatherforecast.com",
+    routeName: "weather-forecast",
   },
 ];

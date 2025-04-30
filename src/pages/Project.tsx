@@ -5,6 +5,7 @@ import Github from "../assets/Github.png";
 import Link from "../assets/Link.png";
 import NextLink from "next/link";
 
+// Explicitly define the projects prop type
 const Project: React.FC = () => {
   return (
     <div
@@ -17,7 +18,7 @@ const Project: React.FC = () => {
       </div>
 
       <div className="flex flex-wrap gap-4 mt-10" data-aos="fade-up">
-        {projects.map((project, index) => (
+        {projects.map((project: ProjectType, index: number) => (
           <div key={index} className="p-5 group relative">
             <div className="overflow-hidden rounded-lg" data-aos="fade-up">
               <Image
@@ -53,7 +54,7 @@ const Project: React.FC = () => {
             <div className="flex justify-between items-center relative z-10 mt-2">
               <p className="text-white text-lg sm:text-xl">{project.name}</p>
 
-              <NextLink href="/Projects/ProjectsDetails">
+              <NextLink href={`/projects/${project.routeName}`}>
                 <button className="text-white bg-fuchsia-500 font-semibold text-sm px-3 py-1 rounded-full shadow-md hover:bg-white hover:text-fuchsia-800 transition duration-300">
                   View Details
                 </button>
