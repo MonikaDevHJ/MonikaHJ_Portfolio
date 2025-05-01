@@ -18,33 +18,64 @@ export default function ProjectDetails({ project }: Props) {
   if (!project) return <p className="text-white">Project not found.</p>;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white px-8 py-10 justify-center">
-      <h1 className="text-4xl font-bold mb-6 text-fuchsia-400">{project.name}</h1>
+    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4 py-10">
+      <div className="max-w-3xl w-full bg-gray-800 rounded-xl shadow-lg p-6">
 
-      <Image
-        src={project.image}
-        alt={project.alt}
-        width={600}
-        height={400}
-        className="rounded-lg shadow-xl mb-6 object-cover"
-      />
+        {/* Project Name */}
+        <h1 className="text-center text-4xl font-bold mb-6 text-fuchsia-400">
+          {project.name}
+        </h1>
 
-      <div className="flex gap-4 mb-4">
-        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-          <Image src={Github} alt="GitHub" width={40} height={40} />
-        </a>
-        <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">
-          <Image src={Link} alt="Live Site" width={40} height={40} />
-        </a>
+        {/* Project Image */}
+        <div className="flex justify-center mb-6">
+          <Image
+            src={project.image}
+            alt={project.alt}
+            width={600}
+            height={400}
+            className="rounded-lg shadow-md object-cover"
+          />
+        </div>
+
+        {/* Links */}
+        <div className="flex flex-col sm:flex-row sm:justify-center gap-6 mb-8">
+          {/* Website Link */}
+          <a
+            href={project.websiteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300"
+          >
+            <Image src={Link} alt="Live Site" width={24} height={24} />
+            <span>Website</span>
+          </a>
+
+          {/* GitHub Link */}
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-md transition duration-300"
+          >
+            <Image src={Github} alt="GitHub" width={24} height={24} />
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        {/* Project Details */}
+        <div className="bg-gray-700 p-4 rounded-md text-base leading-relaxed whitespace-pre-line">
+          <p className="mb-3 text-xl">About The Project</p>
+          {project.details}
+        </div>
       </div>
-
-      <p className="text-lg">
-        {/* Add more details here if you want */}
-        This is the detail page for <strong>{project.name}</strong>.
-      </p>
     </div>
   );
+
 }
+
+
+
+
 
 // Static paths for all projects
 export const getStaticPaths: GetStaticPaths = async () => {

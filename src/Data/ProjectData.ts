@@ -15,6 +15,7 @@ export type Project = {
   githubLink: string;
   websiteLink: string;
   routeName: string;
+  details?: string;
 };
 
 export const projects: Project[] = [
@@ -25,7 +26,15 @@ export const projects: Project[] = [
     githubLink: "https://github.com/JoboxOrg/JoboxHire",
     websiteLink: "https://www.joboxhire.co/",
     routeName: "recruit-and-earn",
+    details: `• Led frontend development for employer and admin portals from inception to deployment.
+   • Developed candidate referral workflows for recruiters to refer candidates and earn incentives.
+    • Implemented form validation, authentication, and authorization for security and accessibility.
+    • Optimized UI components for performance, responsiveness, and reusability using Next.js, React.js, and Tailwind
+    CSS.
+    • Integrated TypeScript for better type safety and reduced runtime errors.
+    • Collaborated with backend teams to consume REST APIs for efficient data flow"`
   },
+
   {
     image: JoboxHire,
     alt: "Jobox Hire",
@@ -33,6 +42,11 @@ export const projects: Project[] = [
     githubLink: "https://github.com/JoboxOrg/JoboxHire",
     websiteLink: "https://joboxhire.com/",
     routeName: "jobox-hire",
+    details: `• Developed JOBOX, a job platform, using the T3 Stack (TypeScript, Tailwind CSS, tRPC).
+• Built responsive front-end interfaces with React.js, Next.js, HTML, CSS, and Tailwind CSS.
+• Created server-side functionalities with Node.js and tRPC for seamless client-server communication.
+• Managed PostgreSQL databases and used Prisma for ORM.
+• Handled version control, PR management, and merge conflicts on GitHub.`
   },
   {
     image: Shoipping,
@@ -40,7 +54,7 @@ export const projects: Project[] = [
     name: "Shopping Cart",
     githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
     websiteLink: "https://shoppingcart.com",
-    routeName: "shopping-cart",
+    routeName: "shopping-cart"
   },
   {
     image: Sigma_Hospital,
@@ -49,6 +63,10 @@ export const projects: Project[] = [
     githubLink: "https://github.com/example-sigmahospital",
     websiteLink: "https://www.infinitrotech.com/",
     routeName: "sigma-hospital",
+    details: `• Developed a comprehensive hospital software system using HTML, CSS, and Bootstrap for responsive and
+user-friendly front-end design, while implementing back-end functionalities with C and ASP.NET to ensure robust
+and scalable server-side operations.
+• Managed database operations and ensured data integrity with SQL.`
   },
   {
     image: Weather,
@@ -56,6 +74,6 @@ export const projects: Project[] = [
     name: "Weather Forecast",
     githubLink: "https://github.com/MonikaDevHJ/Weather_App",
     websiteLink: "https://weatherforecast.com",
-    routeName: "weather-forecast",
-  },
+    routeName: "weather-forecast"
+  }
 ];
