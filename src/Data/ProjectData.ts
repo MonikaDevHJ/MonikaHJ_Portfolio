@@ -47,14 +47,7 @@ export const projects: Project[] = [
 • Managed PostgreSQL databases and used Prisma for ORM.
 • Handled version control, PR management, and merge conflicts on GitHub.`
   },
-  {
-    image: Shoipping,
-    alt: "Shopping Cart",
-    name: "Shopping Cart",
-    githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
-    websiteLink: "https://shoppingcart.com",
-    routeName: "shopping-cart"
-  },
+ 
   {
     image: Sigma_Hospital,
     alt: "Sigma Hospital",
@@ -73,6 +66,20 @@ and scalable server-side operations.
     name: "Weather Forecast",
     githubLink: "https://github.com/MonikaDevHJ/Weather_App",
     websiteLink: "https://weatherforecast.com",
-    routeName: "weather-forecast"
-  }
+    routeName: "weather-forecast",
+    details: `• Initialized the project using Next.js and Tailwind CSS, with dynamic class handling using the 'cn' utility function for cleaner conditional styling.
+• Integrated OpenWeatherMap API to fetch real-time weather data using Axios and managed secure API calls with API keys.
+• Used react-query for efficient data fetching and caching, ensuring optimal performance and user experience.
+• Displayed formatted dates using date-fns and customized weather icons based on time (e.g., 6AM, 3PM) using a helper function getDayOrNight.ts.
+• Modularized the UI into components like WeatherDetails, ForecastWeather, and WeatherIcon for a clean, maintainable structure showing 7-day forecasts and current weather insights.`
+
+  },
+  {
+    image: Shoipping,
+    alt: "Shopping Cart",
+    name: "Shopping Cart",
+    githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
+    websiteLink: "https://shoppingcart.com",
+    routeName: "shopping-cart"
+  },
 ];
