@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
-import { projects, Project } from "../../../public/Data/ProjectData";
+import { projects, Project } from "../../Data/ProjectData";
 import Github from "../../assets/Github.png";
 import Link from "../../assets/Link.png";
 import { useRouter } from "next/router";
@@ -18,7 +18,7 @@ export default function ProjectDetails({ project }: Props) {
   if (!project) return <p className="text-white">Project not found.</p>;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white px-8 py-10">
+    <div className="min-h-screen bg-gray-900 text-white px-8 py-10 justify-center">
       <h1 className="text-4xl font-bold mb-6 text-fuchsia-400">{project.name}</h1>
 
       <Image
