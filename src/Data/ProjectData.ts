@@ -3,8 +3,7 @@ import JoboxHire from "../../src/assets/JoboxHire.png";
 import Shoipping from "../../src/assets/Shoipping.png";
 import Sigma_Hospital from "../../src/assets/Sigma_Hospital.png";
 import Weather from "../../src/assets/Weather.png";
-import Github from "../assets/Github.png";
-import Link from "../assets/Link.png";
+
 import Recruitearn from "../../src/assets/Recruitearn.png";
 import { StaticImageData } from "next/image";
 
