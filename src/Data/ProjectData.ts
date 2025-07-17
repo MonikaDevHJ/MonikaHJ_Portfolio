@@ -1,7 +1,6 @@
 // data/ProjectData.ts
 import JoboxHire from "../../src/assets/JoboxHire.png";
 import Shoipping from "../../src/assets/Shoipping.png";
-import Sigma_Hospital from "../../src/assets/Sigma_Hospital.png";
 import Weather from "../../src/assets/Weather.png";
 
 import Recruitearn from "../../src/assets/Recruitearn.png";
@@ -48,18 +47,7 @@ export const projects: Project[] = [
 • Handled version control, PR management, and merge conflicts on GitHub.`
   },
  
-//   {
-//     image: Sigma_Hospital,
-//     alt: "Sigma Hospital",
-//     name: "Sigma Hospital",
-//     githubLink: "https://github.com/example-sigmahospital",
-//     websiteLink: "https://www.infinitrotech.com/",
-//     routeName: "sigma-hospital",
-//     details: `• Developed a comprehensive hospital software system using HTML, CSS, and Bootstrap for responsive and
-// user-friendly front-end design, while implementing back-end functionalities with C and ASP.NET to ensure robust
-// and scalable server-side operations.
-// • Managed database operations and ensured data integrity with SQL.`
-//   },
+
   {
     image: Weather,
     alt: "Weather App",
