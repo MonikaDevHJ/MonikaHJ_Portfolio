@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <div className="flex-1 p-5">
           <p className="font-bold text-fuchsia-400   ml-1 text-4xl">About Me</p>  
           <p className="text-white font-semibold text-2xl mt-8" data-aos="fade-up">
-            I have 1.5+ year of experience in software development, specializing
+            I have 2+ year of experience in software development, specializing
             in creating responsive applications. With a background in Computer
             Science and a certification in Java Full Stack Development, I’m
             proficient in front-end and back-end technologies. Currently, as a

@@ -75,7 +75,7 @@ const Experience = () => {
       <hr className="border-t border-slate-100/30 mt-8 w-full" />
 
       {/* Job 2 */}
-      <div className="mt-10" data-aos="fade-up">
+      {/* <div className="mt-10" data-aos="fade-up">
         <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-4">
           <div>
             <p className="text-xl text-slate-300">2023 to 2023</p>
@@ -101,9 +101,9 @@ const Experience = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <hr className="border-t border-slate-100/30 mt-8 w-full" />
+      {/* <hr className="border-t border-slate-100/30 mt-8 w-full" /> */}
 
       {/* Job 3 */}
       <div className="mt-10" data-aos="fade-up">
