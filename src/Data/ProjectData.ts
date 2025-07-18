@@ -46,7 +46,6 @@ export const projects: Project[] = [
 • Managed PostgreSQL databases and used Prisma for ORM.
 • Handled version control, PR management, and merge conflicts on GitHub.`
   },
- 
 
   {
     image: Weather,
@@ -60,7 +59,6 @@ export const projects: Project[] = [
 • Used react-query for efficient data fetching and caching, ensuring optimal performance and user experience.
 • Displayed formatted dates using date-fns and customized weather icons based on time (e.g., 6AM, 3PM) using a helper function getDayOrNight.ts.
 • Modularized the UI into components like WeatherDetails, ForecastWeather, and WeatherIcon for a clean, maintainable structure showing 7-day forecasts and current weather insights.`
-
   },
   {
     image: Shoipping,
@@ -69,5 +67,5 @@ export const projects: Project[] = [
     githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
     websiteLink: "https://shoppingcart.com",
     routeName: "shopping-cart"
-  },
+  }
 ];

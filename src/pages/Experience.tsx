@@ -62,12 +62,45 @@ const Experience = () => {
               </a>
             </div>
             <ul className="text-base text-slate-400 mt-1">
-              <li>• Developed JOBOX, a job platform, using the T3 Stack (TypeScript, Tailwind CSS, tRPC).</li>
-              <li>• Built responsive front-end interfaces with React.js, Next.js, HTML, CSS, and Tailwind CSS.</li>
-              <li>• Created server-side functionalities with Node.js and tRPC.</li>
-              <li>• Managed PostgreSQL databases and used Prisma ORM.</li>
-              <li>• Handled version control and PR management on GitHub.</li>
+              <li> •Led frontend development for employer and admin portals from inception to deployment.</li>
+              <li> Developed candidate referral workflows for recruiters to refer candidates and earn incentives.</li>
+              <li>• Implemented form validation, authentication, and authorization for security and accessibility.</li>
+              <li>• Optimized UI components for performance, responsiveness, and reusability using Next.js, React.js, and Tailwind
+                CSS.</li>
+              <li>
+                • Integrated TypeScript for better type safety and reduced runtime errors.</li>
+              <li>
+                • Collaborated with backend teams to consume REST APIs for efficient data flow.
+              </li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4" data-aos="fade-up">
+        <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-4">
+          <div></div>
+          <div>
+            <p className="text-base text-slate-400 mt-2">Full Stack Developer</p>
+            <div className="flex gap-3">
+              <p className="text-base text-slate-400 mt-1">Project 3: GetsetHire.co</p>
+              <a
+                href="https://www.joboxhire.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-slate-400 mt-1"
+              >
+                Link
+              </a>
+            </div>
+            <ul className="text-base text-slate-400 mt-1">
+              <li>• Currently developing GetSetHire, a job platform, using the T3 Stack (TypeScript, Tailwind CSS, tRPC).</li>
+              <li>• Designing responsive front-end interfaces using React.js, Next.js (App Router), HTML, CSS, and Tailwind CSS.</li>
+              <li>• Implementing backend functionalities with Node.js and tRPC for smooth client-server communication.</li>
+              <li>• Managing PostgreSQL database with Prisma ORM for efficient and type-safe data handling.</li>
+              <li>• Collaborating using GitHub for version control, PR reviews, and handling merge conflicts.</li>
+            </ul>
+
           </div>
         </div>
       </div>
