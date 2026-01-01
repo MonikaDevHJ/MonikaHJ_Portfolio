@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Monika from "../assets/Monika.jpeg";
+import Monika from "../../public/assets/Monika.jpeg";
 import Image from "next/image";
 import Link from 'next/link';
 

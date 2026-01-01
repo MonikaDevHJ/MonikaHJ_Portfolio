@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import email from "../assets/email.png";
-import linkedin from "../assets/linkedin.png";
-import Github from "../assets/Github.png";
+import email from "../../public/assets/email.png";
+import linkedin from "../../public/assets/linkedin.png";
+import Github from "../../public/assets/Github.png";
 
 
 
