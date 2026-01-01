@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { projects, Project as ProjectType } from "../Data/ProjectData";
-import Github from "../assets/Github.png";
-import Link from "../assets/Link.png";
+import Github from "../../public/assets/Github.png";
+import Link from "../../public/assets/Link.png";
 import NextLink from "next/link";
 
 // Explicitly define the projects prop type

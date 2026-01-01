@@ -1,9 +1,9 @@
 // data/ProjectData.ts
-import JoboxHire from "../../src/assets/JoboxHire.png";
+import JoboxHire from "../../public/assets/JoboxHire.png";
 import getsetHire from "../../public/assets/getsetHire.png";
 import Find_job from "../../public/assets/Find_job.png";
 
-import Recruitearn from "../../src/assets/Recruitearn.png";
+import Recruitearn from "../../public/assets/Recruitearn.png";
 import { StaticImageData } from "next/image";
 
 export type Project = {
