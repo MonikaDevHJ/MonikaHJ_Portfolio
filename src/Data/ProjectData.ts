@@ -1,7 +1,7 @@
 // data/ProjectData.ts
 import JoboxHire from "../../src/assets/JoboxHire.png";
-import Shoipping from "../../src/assets/Shoipping.png";
-import Weather from "../../src/assets/Weather.png";
+import getsetHire from "../../public/assets/getsetHire.png";
+import Find_job from "../../public/assets/Find_job.png";
 
 import Recruitearn from "../../src/assets/Recruitearn.png";
 import { StaticImageData } from "next/image";
@@ -48,24 +48,30 @@ export const projects: Project[] = [
   },
 
   {
-    image: Weather,
-    alt: "Weather App",
-    name: "Weather Forecast",
-    githubLink: "https://github.com/MonikaDevHJ/Weather_App",
-    websiteLink: "https://weatherforecast.com",
-    routeName: "weather-forecast",
-    details: `• Initialized the project using Next.js and Tailwind CSS, with dynamic class handling using the 'cn' utility function for cleaner conditional styling.
-• Integrated OpenWeatherMap API to fetch real-time weather data using Axios and managed secure API calls with API keys.
-• Used react-query for efficient data fetching and caching, ensuring optimal performance and user experience.
-• Displayed formatted dates using date-fns and customized weather icons based on time (e.g., 6AM, 3PM) using a helper function getDayOrNight.ts.
-• Modularized the UI into components like WeatherDetails, ForecastWeather, and WeatherIcon for a clean, maintainable structure showing 7-day forecasts and current weather insights.`
+    image: getsetHire,
+    alt: "Jobox Hire",
+    name: "getsethire.co",
+    githubLink: "https://github.com/Jobox-getsethire",
+    websiteLink: "https://www.getsethire.co/",
+    routeName: "getsethire.co",
+    details: `• Developed JOBOX, a job platform, using the T3 Stack (TypeScript, Tailwind CSS, tRPC).
+• Built responsive front-end interfaces with React.js, Next.js, HTML, CSS, and Tailwind CSS.
+• Created server-side functionalities with Node.js and tRPC for seamless client-server communication.
+• Managed PostgreSQL databases and used Prisma for ORM.
+• Handled version control, PR management, and merge conflicts on GitHub.`
   },
+
   {
-    image: Shoipping,
-    alt: "Shopping Cart",
-    name: "Shopping Cart",
-    githubLink: "https://github.com/MonikaDevHJ/E_commerce_Website",
-    websiteLink: "https://shoppingcart.com",
-    routeName: "shopping-cart"
+    image: Find_job,
+    alt: "Find_job",
+    name: "Find_Job",
+    githubLink: "https://github.com/MonikaDevHJ/Find_JobT3",
+    websiteLink: "https://find-job-t3.vercel.app/",
+    routeName: "Find_Job",
+    details: `• Developed JOBOX, a job platform, using the T3 Stack (TypeScript, Tailwind CSS, tRPC).
+• Built responsive front-end interfaces with React.js, Next.js, HTML, CSS, and Tailwind CSS.
+• Created server-side functionalities with Node.js and tRPC for seamless client-server communication.
+• Managed PostgreSQL databases and used Prisma for ORM.
+• Handled version control, PR management, and merge conflicts on GitHub.`
   }
 ];
